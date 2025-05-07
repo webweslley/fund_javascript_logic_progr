@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lampada</h1>
+    </header>
+    <section>
+      
+  
+      <div>
+            <img src="/assents/lamp_off.jpeg" alt="Lampada Off" id="lamp">
+      </div>
+
+      <div>
+        <button id="turnOn">Lá_ele</button>
+        <button id="turnOff">Deitou_sem_sono</button>
+      </div>
+  </section>
+    
+</body>
+
+    <script>
+        const lamp = document.getElementById("lamp");
+        const turnOn = document.getElementById("turmOn");
+        const turnOff = document.getElementById("turnOff") ;
+       
+        function lampOn() { 
+            if(!isLamBrok()) {
+                lamp.scr = "./img/lamp_on.jpg";
+            }
+        }
+
+        function lampOff() { 
+            if(!isLamBrok()) {
+                lamp.scr = "./img/lamp_off.jpg";
+            }
+        }
+
+        function isLamBrok(){
+            return lamp.scr.indexOf ("quebrada") > -1
+        }
+        
+
+
+        
+    </script>
+</html>
